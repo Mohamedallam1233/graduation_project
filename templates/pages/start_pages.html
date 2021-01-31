@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static%}
+{% block content %}
+	<!-- Section: intro -->
+    <section id="introo">
+		<div class="intro-content">
+			<div class="container mt-5 animated bounce" id="container">
+				<div class="form-container sign-up-container mt-2">
+				  <form action="#">
+					<h1 class="font-weight-bold">Create Account</h1>
+					<input type="text" placeholder="Name" />
+					<input type="email" placeholder="Email" />
+					<input type="password" placeholder="Password" />
+					<button class="btn btn-info btn-rounded">Sign up</button>
+				  </form>
+				</div>
+
+				<div class="form-container sign-in-container">
+				  <form action="#">
+					<h1 class="font-weight-bold">Sign in</h1>
+
+					<input type="email" placeholder="Email" />
+					<input type="password" placeholder="Password" />
+					<button class="btn btn-info btn-rounded ">Sign In</button>
+				  </form>
+				</div>
+
+				<div class="overlay-container">
+				  <div class="overlay">
+					<div class="overlay-panel overlay-left">
+					  <h1 class="font-weight-bold">Good to see you!<h1>
+					  <p>You already have an account? <br>Sign in!</p>
+					  <button class="but" id="signIn">Sign In</button>
+					</div>
+					<div class="overlay-panel overlay-right">
+					  <h1 class="font-weight-bold">Hello, Dear!</h1>
+					  <p>You don't have account yet? Don't worry! You still can join us</p>
+					  <button class="but" id="signUp">Sign Up</button>
+					</div>
+				  </div>
+				</div>
+			  </div>
+		</div>
+    </section>
+
+{% endblock %}

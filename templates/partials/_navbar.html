@@ -1,0 +1,52 @@
+{% load static %}
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+
+        <div class="container navigation">
+
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="{% url 'index' %}">
+                    <img src="{% static 'img/logo.png'%}" alt="" width="150" height="40" />
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+			  <ul class="nav navbar-nav">
+                {% if 'home' in request.path %}
+                <li class="active"><a href="#introo">Home</a></li>
+				<li><a href="#service">Service</a></li>
+				<li><a href="#doctor">Doctors</a></li>
+				<li><a href="#facilities">Facilities</a></li>
+				<li><a href="#pricing">Pricing</a></li>
+                {% elif 'app_service' in request.path %}
+                <li class="active"><a href="{% url 'index' %}">back to home page</a></li>
+				<li><a href="#"> online service</a></li>               
+                {% elif 'doctor' in request.path %}
+                <li class="active"><a href="{% url 'index' %}">back to home page</a></li>
+				<li><a href="#"> doctors</a></li>               
+                {% elif 'nurse' in request.path %}
+                <li class="active"><a href="{% url 'index' %}">back to home page</a></li>
+                <li><a href="#"> nurse</a></li> 
+                {% elif 'questionss' in request.path %}
+                <li class="active"><a href="{% url 'index' %}">back to home page</a></li>
+				<li><a href="#">ask question</a></li>  
+                {% elif 'checkup' in request.path %}
+                <li class="active"><a href="{% url 'index' %}">back to home page</a></li>
+                <li><a href="#">medical checkup</a></li>  
+                {% elif 'Radiology_Diagnostics' in request.path %}
+                <li class="active"><a href="{% url 'index' %}">back to home page</a></li>
+                <li><a href="#">Radiology Diagnostics</a></li> 
+                {% else %}
+                <li class="active"><a href="{% url 'index' %}">sign or register to use serves</a></li>
+                {% endif %}
+
+                
+                
+				
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+</nav>

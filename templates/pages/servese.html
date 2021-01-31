@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+{% load static%}
+{% block content %}
+	<!-- Section: services -->
+    <section id="service" class="home-section nopadding paddingtop-100" style="margin-top: 70px;">
+
+		<div class="container mt-5">
+
+        <div class="row mt-5">
+			<div class="col-sm-6 col-md-4">
+				<div class="wow fadeInUp" data-wow-delay="0.2s">
+				<img src="{% static 'img/dummy/img-1.jpg'%}" class="img-responsive" alt="" />
+				</div>
+            </div>
+			<div class="col-sm-3 col-md-4">
+				
+				<div class="wow fadeInRight " data-wow-delay="0.1s" style="margin-bottom: 70px;">
+                <div class="service-box">
+					<div class="service-icon">
+						<span class="fa fa-stethoscope fa-3x"></span> 
+					</div>
+					<div class="service-desc">
+						
+						<h2><a type="button" href= "{% url 'checkup' %}"   style="width: 250px;"  class="btn btn-primary mb-3 h-light">Medical checkup</a></h2>
+
+						
+					</div>
+                </div>
+				</div>
+				
+				<div class="wow fadeInRight" data-wow-delay="0.2s" style="margin-bottom: 70px;">
+				<div class="service-box">
+					<div class="service-icon">
+						<span class="fa fa-wheelchair fa-3x"></span> 
+					</div>
+					<div class="service-desc">
+						
+						<h2><a type="button" href="{% url 'nurse' %}"   style="width: 250px;"  class="btn btn-primary mb-3 h-light">Nursing Services</a></h2>
+					</div>
+                </div>
+				</div>
+				<div class="wow fadeInRight" data-wow-delay="0.3s" style="margin-bottom: 70px;">
+				<div class="service-box">
+					<div class="service-icon">
+						<span class="fa fa-plus-square fa-3x"></span> 
+					</div>
+					<div class="service-desc">
+						<h2><a type="button" href="#" style="width: 250px;"  class="btn btn-primary mb-3 h-light">Pharmacy</a></h2>
+					</div>
+                </div>
+				</div>
+				
+
+
+            </div>
+			<div class="col-sm-3 col-md-4">
+				
+				<div class="wow fadeInRight" data-wow-delay="0.1s" style="margin-bottom: 70px;">
+                <div class="service-box">
+					<div class="service-icon">
+						<span class="fa fa-h-square fa-3x"></span> 
+					</div>
+					<div class="service-desc">
+						
+						<h2><a type="button" href="{% url 'questionss' %}"  style="width: 250px;"  class="btn btn-primary mb-3 h-light">ask question</a></h2>
+					</div>
+                </div>
+				</div>
+				
+				<div class="wow fadeInRight" data-wow-delay="0.2s" style="margin-bottom: 70px;">
+				<div class="service-box">
+					<div class="service-icon">
+						<span class="fa fa-filter fa-3x"></span> 
+					</div>
+					<div class="service-desc">
+						
+						<h2><a type="button" href="{% url 'Radiology_Diagnostics' %}"  style="width: 250px;"  class="btn btn-primary mb-3 h-light">Radiology Diagnostics</a></h2>
+					</div>
+                </div>
+				</div>
+				<div class="wow fadeInRight" data-wow-delay="0.3s" style="margin-bottom: 70px;">
+				<div class="service-box">
+					<div class="service-icon">
+						<span class="fa fa-user-md fa-3x"></span> 
+					</div>
+					<div class="service-desc">
+						<h2><a type="button" href="{% url 'doctor' %}"   style="width: 250px;"  class="btn btn-primary mb-3 h-light">chat with doctor</a></h2>
+					</div>
+                </div>
+				</div>
+
+			</div>
+			
+			
+		</div>	
+		
+		</div>
+		
+	</section>
+	<!-- /Section: services -->
+	
+{% endblock %}
